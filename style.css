@@ -1,40 +1,69 @@
 html {
-    color: rgb(239, 236, 236);
-    text-align: center;
-    font-family: 'Cantarell', sans-serif;
+  color: rgb(239, 236, 236);
+  text-align: center;
+  font-family: "Cantarell", sans-serif;
 }
 #index-1 {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: black url("./img/background-photo.jpg") no-repeat center/cover;
-    /* background-size: cover; */
-    background-origin: border-box;
-    background-attachment: fixed;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black url("./img/background-photo.jpg") no-repeat center/cover;
+  /* background-size: cover; */
+  background-origin: border-box;
+  background-attachment: fixed;
 }
-#index-1>.index-center {
-    height: 25%;
+#index-1 > .index-center {
+  height: 25%;
 }
 .index-center {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid red;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
-h1, h2, h3 {
-    font-weight: 400;
+h1,
+h2,
+h3 {
+  font-weight: 400;
 }
 h1 {
-    font-size: 4rem;
-    font-family: 'Kotta One', serif;
+  font-size: 4rem;
+  font-family: "Kotta One", serif;
 }
 h2 {
-    font-size: 3rem;
-    font-weight: 700;
+  font-size: 3rem;
+  font-weight: 700;
 }
 h3 {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
+}
+button {
+  color: rgb(202, 250, 234);
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(202, 250, 234);
+  border-radius: 3px;
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 800px) {
+  #index-1 {
+    background-image: url("./img/background-photo-mobile-devices.jpg");
+  }
+  #index-1 > .index-center {
+    min-height: 70%;
+    justify-content: space-around;
+    margin: 0 20vw;
+    border: 1px solid green;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
 }
