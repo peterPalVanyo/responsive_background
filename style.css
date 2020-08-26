@@ -1,15 +1,40 @@
+html {
+    color: rgb(239, 236, 236);
+    text-align: center;
+    font-family: 'Cantarell', sans-serif;
+}
 #index-1 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: black url("./img/background-photo.jpg") no-repeat center/cover;
+    /* background-size: cover; */
+    background-origin: border-box;
+    background-attachment: fixed;
 }
-
+#index-1>.index-center {
+    height: 25%;
+}
 .index-center {
-    background-color: antiquewhite;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    border: 1px solid red;
+}
+h1, h2, h3 {
+    font-weight: 400;
+}
+h1 {
+    font-size: 4rem;
+    font-family: 'Kotta One', serif;
+}
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+h3 {
+    font-size: 1.8rem;
 }
