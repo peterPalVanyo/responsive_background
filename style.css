@@ -3,6 +3,44 @@ html {
   text-align: center;
   font-family: "Cantarell", sans-serif;
 }
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header div, header nav {
+  width: 250px;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+header div {
+  justify-content: flex-start;
+}
+header a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: space-around;
+  color: currentColor;
+}
+header a:hover{
+  color: black;
+  background-color: rgb(202, 250, 234);
+  border-radius: 3px;
+}
+.svgs {
+  fill: currentColor;
+  width: 2.5rem;
+}
 #index-1 {
   display: flex;
   flex-flow: row nowrap;
@@ -46,6 +84,7 @@ button {
   border-radius: 3px;
   padding: 1rem 2rem;
 }
+
 
 @media (max-width: 800px) {
   #index-1 {
